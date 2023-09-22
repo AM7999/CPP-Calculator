@@ -18,14 +18,6 @@ int main() {
 	//Variables-Init
 	launch = 0;
 	menu = 0;
-	/*addOne = 0;
-	addTwo = 0;
-	subOne = 0;
-	subTwo = 0;
-	mulOne = 0;
-	mulTwo = 0;
-	divOne = 0;
-	divTwo = 0;*/
 
 	cout << "Please select the operating system you are using" << endl;
 	cout << "1. Windows" << endl;
