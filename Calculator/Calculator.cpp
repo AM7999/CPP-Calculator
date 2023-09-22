@@ -7,18 +7,14 @@ int main() {
 	int launch;
 	int menu;
 	char relaunch;
-	float addOne;
-	float addTwo;
-	float subOne;
-	float subTwo;
-	float mulOne;
-	float mulTwo;
+	int addOne;
+	int addTwo;
+	int subOne;
+	int subTwo;
+	int mulOne;
+	int mulTwo;
 	float divOne;
 	float divTwo;
-
-	//Variables-Init
-	launch = 0;
-	menu = 0;
 
 	cout << "Please select the operating system you are using" << endl;
 	cout << "1. Windows" << endl;
@@ -60,8 +56,12 @@ int main() {
 				goto init;
 			}
 			if (relaunch == 'N') {
-				cout << "Saving history to file" << endl;
-
+				cout << "Saving history to file.." << endl;
+				ofstream logfile;
+				logfile.open("log.txt");
+				logfile << "FILE WILL BE ERASED ON PROGRAM EXIT \n Addition: "; 
+				logfile << addOne + addTwo;
+				logfile.close(); 
 				cout << "Exit.." << endl;
 				return 2;
 			}
