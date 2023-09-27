@@ -103,6 +103,12 @@ init:
 			goto init;
 		}
 		if (relaunch == 'N') {
+			cout << "Saving history to file..";
+			ofstream logfile;
+			logfile.open("log.txt");
+			logfile << "FILE WILL BE ERASED ON PROGRAM RE-EXIT \n Multiplication: ";
+			logfile << mulOne * mulTwo;
+			logfile.close();
 			cout << "Exit.." << endl;
 			return 2;
 		}
@@ -126,6 +132,12 @@ init:
 			goto init;
 		}
 		if (relaunch == 'N') {
+			cout << "Saving history to file..";
+			ofstream logfile;
+			logfile.open("log.txt");
+			logfile << "FILE WILL BE ERASED ON PROGRAM RE-EXIT \n Division: ";
+			logfile << divOne / divTwo;
+			logfile.close();
 			cout << "Exit.." << endl;
 			return 2;
 		}
@@ -135,10 +147,8 @@ init:
 		}
 	}
 
-
-
 	if (menu == 5) {
-		goto exit;
+		return 0;
 	}
 
 	if (menu >> 5); {
@@ -147,6 +157,5 @@ init:
 		goto init;
 	}
 
-	exit:
 	return 0;
 }
