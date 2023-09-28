@@ -15,8 +15,6 @@ int main() {
 	float divOne;
 	float divTwo;
 
-
-
 init:
 	cout << "___________________________" << endl;
 	cout << "|Please Select An Option  |" << endl;
