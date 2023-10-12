@@ -2,8 +2,11 @@
 #include <fstream>
 using namespace std;
 
+//Defines clear() to print an ASCII escape sequence which clears the terminal
+#define clear()  printf("\033[H\033[J")
+
 int main() {
-	//Variables-Declare
+	//Variables Declare
 	int menu;
 	char relaunch;
 	int addOne;
@@ -15,6 +18,7 @@ int main() {
 	float divOne;
 	float divTwo;
 
+	//Main Menu and the goto marker to relaunch the program at the end of each operation if statement
 init:
 	cout << "___________________________" << endl;
 	cout << "|Please Select An Option  |" << endl;
@@ -23,15 +27,17 @@ init:
 	cout << "|2. Subtraction           |" << endl;
 	cout << "|3. Multiplication        |" << endl;
 	cout << "|4. Division              |" << endl;
-	cout << "|5. Exit                  |" << endl;
+	cout << "|5. MPG Calculation       |" << endl;
+	cout << "|6. F to C Converter      |" << endl;
+	cout << "|7. Exit                  |" << endl;
 	cout << "---------------------------" << endl;
 	cout << "Option: ";
 	cin >> menu;
 
-
+	//If statement for addition 
 	if (menu == 1) {
-		system("cls");
-		system("clear");
+		//clears the terminal
+		clear();
 		cout << "Please Select a number for the variable addOne: ";
 		cin >> addOne;
 		cout << "Please Select a number for the variable AddTwo: ";
@@ -42,6 +48,7 @@ init:
 		if (relaunch == 'Y') {
 			goto init;
 		}
+		//Writes the result of the 2 variables being added to a file called "log.txt"
 		if (relaunch == 'N') {
 			cout << "Saving history to file.." << endl;
 			ofstream logfile;
@@ -52,15 +59,17 @@ init:
 			cout << "Exit.." << endl;
 			return 2;
 		}
+		//Errors out if the char variable relaunch is not equal to Y or N
 		else {
 			cout << "Expected uppercase got: " << relaunch << endl;
 			return -1;
 		}
 	}
 
+	//If statement for subtraction
 	if (menu == 2) {
-		system("cls");
-		system("clear");
+		//clears the terminal
+		clear();
 		cout << "Please Select a number for the variable subOne: ";
 		cin >> subOne;
 		cout << "Please Select a number for the variable subTwo: ";
@@ -71,6 +80,7 @@ init:
 		if (relaunch == 'Y') {
 			goto init;
 		}
+		//Writes the result of the 2 variables being subtracted to a file called "log.txt"
 		if (relaunch == 'N') {
 			cout << "Saving history to file.." << endl;
 			ofstream logfile;
@@ -81,6 +91,7 @@ init:
 			cout << "Exit.." << endl;
 			return 2;
 		}
+		//Errors out if the char variable relaunch is not equal to Y or N
 		else {
 			cout << "Expected uppercase got: " << relaunch << endl;
 			return -1;
@@ -88,8 +99,7 @@ init:
 	}
 
 	if (menu == 3) {
-		system("cls");
-		system("clear");
+		clear();
 		cout << "Please Select a number for the variable mulOne: ";
 		cin >> mulOne;
 		cout << "Please Select a number for the variable mulTwo: ";
@@ -117,8 +127,7 @@ init:
 	}
 
 	if (menu == 4) {
-		system("cls");
-		system("clear");
+		clear();
 		cout << "Please Select a number for the variable divOne: ";
 		cin >> divOne;
 		cout << "Please Select a number for the variable divTwo: ";
@@ -145,13 +154,12 @@ init:
 		}
 	}
 
-	if (menu == 5) {
+	if (menu == 7) {
 		return 0;
 	}
 
-	if (menu >> 5); {
-		system("cls");
-		system("clear");
+	if (menu >> 7); {
+		clear();
 		goto init;
 	}
 
