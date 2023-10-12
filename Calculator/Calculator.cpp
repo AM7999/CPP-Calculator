@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include "addition.h"
 using namespace std;
 
 //Defines clear() to print an ASCII escape sequence which clears the terminal
@@ -36,34 +37,7 @@ init:
 
 	//If statement for addition 
 	if (menu == 1) {
-		//clears the terminal
-		clear();
-		cout << "Please Select a number for the variable addOne: ";
-		cin >> addOne;
-		cout << "Please Select a number for the variable AddTwo: ";
-		cin >> addTwo;
-		cout << "Result: " << addOne + addTwo << endl;
-		cout << "Do you want to re-run the program? Y/N ";
-		cin >> relaunch;
-		if (relaunch == 'Y') {
-			goto init;
-		}
-		//Writes the result of the 2 variables being added to a file called "log.txt"
-		if (relaunch == 'N') {
-			cout << "Saving history to file.." << endl;
-			ofstream logfile;
-			logfile.open("log.txt");
-			logfile << "FILE WILL BE ERASED ON PROGRAM EXIT \n Addition: ";
-			logfile << addOne + addTwo;
-			logfile.close();
-			cout << "Exit.." << endl;
-			return 2;
-		}
-		//Errors out if the char variable relaunch is not equal to Y or N
-		else {
-			cout << "Expected uppercase got: " << relaunch << endl;
-			return -1;
-		}
+		addition();
 	}
 
 	//If statement for subtraction
@@ -158,7 +132,7 @@ init:
 		return 0;
 	}
 
-	if (menu >> 7); {
+	if (menu >> 7) {
 		clear();
 		goto init;
 	}
