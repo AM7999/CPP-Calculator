@@ -129,9 +129,15 @@
   <ItemGroup>
     <ClCompile Include="addition.cpp" />
     <ClCompile Include="Calculator.cpp" />
+    <ClCompile Include="division.cpp" />
+    <ClCompile Include="multiplication.cpp" />
+    <ClCompile Include="subtraction.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="addition.h" />
+    <ClInclude Include="division.h" />
+    <ClInclude Include="multiplication.h" />
+    <ClInclude Include="subtraction.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

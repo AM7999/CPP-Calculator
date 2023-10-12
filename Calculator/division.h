@@ -1,10 +1,10 @@
 #pragma once
-#ifndef ADDITION_H
-#define ADDITION_H
+#ifndef DIVISION_H
+#define DIVISION_H
 
 #include <iostream>
 #include <fstream>
 
-void addition();
+void division();
 
 #endif
