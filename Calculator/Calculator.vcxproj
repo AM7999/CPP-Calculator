@@ -130,14 +130,18 @@
     <ClCompile Include="addition.cpp" />
     <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="division.cpp" />
+    <ClCompile Include="mpg.cpp" />
     <ClCompile Include="multiplication.cpp" />
     <ClCompile Include="subtraction.cpp" />
+    <ClCompile Include="temp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="addition.h" />
     <ClInclude Include="division.h" />
+    <ClInclude Include="mpg.h" />
     <ClInclude Include="multiplication.h" />
     <ClInclude Include="subtraction.h" />
+    <ClInclude Include="temp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

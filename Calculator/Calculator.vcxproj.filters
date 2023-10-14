@@ -30,6 +30,12 @@
     <ClCompile Include="division.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mpg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="addition.h">
@@ -42,6 +48,12 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="multiplication.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="temp.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

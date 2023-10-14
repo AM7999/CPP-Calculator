@@ -4,6 +4,8 @@
 #include "subtraction.h"
 #include "division.h"
 #include "multiplication.h"
+#include "mpg.h"
+#include "temp.h"
 using namespace std;
 
 //Defines clear() to print an ASCII escape sequence which clears the terminal
@@ -45,6 +47,14 @@ init:
 
 	if (menu == 4) {
 		division();
+	}
+
+	if (menu == 5) {
+		mpg();
+	}
+
+	if (menu == 6) {
+		temp();
 	}
 
 	if (menu == 7) {
