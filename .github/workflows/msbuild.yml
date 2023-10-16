@@ -43,9 +43,8 @@ jobs:
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
       run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}}
 
-      -name: Upload a build Artifact
-       uses: actions/upload-artifact@v3.1.3
-       with:
-         Calculator
-         name: Calculator
-         path: .\build\Release\Calculator.exe
+    - name: Archive Thigh-High-Socks_1.19.2-Forge
+      uses: actions/upload-artifact@v2
+      with:
+        name: Calculator
+        path: .\build\Release\Calculator.exe
