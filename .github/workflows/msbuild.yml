@@ -47,4 +47,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: Calculator
-        path: .\build\Release\Calculator.exe
+        path: .\x64\Release\Calculator.exe
