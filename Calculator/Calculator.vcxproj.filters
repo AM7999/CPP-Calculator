@@ -36,24 +36,12 @@
     <ClCompile Include="temp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="gpa.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="addition.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="subtraction.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="division.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="multiplication.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mpg.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="temp.h">
+    <ClInclude Include="math.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
