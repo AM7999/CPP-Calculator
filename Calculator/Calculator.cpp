@@ -3,6 +3,8 @@
 #include "math.h"
 using namespace std;
 
+#define clear() printf("\033[H\033[J")
+
 int main() {
 	int menu;
 	//Main Menu and the goto marker to relaunch the program at the end of each operation if statement
