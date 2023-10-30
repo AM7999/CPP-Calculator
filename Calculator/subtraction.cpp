@@ -18,9 +18,7 @@ void subtraction() {
 	char relaunch;
 	cout << "Do you want to re-run the program? Y/N ";
 	cin >> relaunch;
-	if (relaunch == 'Y') {
-		subtraction();
-	}
+	if (relaunch == 'Y') { subtraction(); }
 	//Writes the result of the 2 variables being subtracted to a file called "log.txt"
 	if (relaunch == 'N') {
 		cout << "Saving history to file.." << endl;

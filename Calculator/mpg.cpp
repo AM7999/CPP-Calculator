@@ -35,9 +35,7 @@ void mpg() {
 	cout << result << endl;
 	cout << "Do you want to re-run the program? Y/N";
 	cin >> relaunch;
-	if (relaunch == 'Y') {
-		mpg();
-	}
+	if (relaunch == 'Y') { mpg(); }
 	if (relaunch == 'N') {
 		cout << "Saving history to file.." << endl;
 		ofstream logfile;

@@ -25,9 +25,7 @@ void gpa() {
 	char relaunch;
 	cout << "Do you want to re-run the program? Y/N";
 	cin >> relaunch;
-	if (relaunch == 'Y') {
-		gpa();
-	}
+	if (relaunch == 'Y') { gpa(); }
 	if (relaunch == 'N') {
 		cout << "Saving history to file.." << endl;
 		ofstream logfile;

@@ -25,9 +25,7 @@ void temp() {
 	cout << "Temperature in Celsius: " << tempInC << endl;
 	cout << "Do you want to relaunch the program? Y/N ";
 	cin >> relaunch;
-	if (relaunch == 'Y') {
-		temp();
-	}
+	if (relaunch == 'Y') { temp(); }
 	if (relaunch == 'N') {
 		cout << "Saving history to file.." << endl;
 		ofstream logfile;
