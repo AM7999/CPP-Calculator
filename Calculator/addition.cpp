@@ -18,9 +18,9 @@ void addition() {
     char relaunch;
     cout << "Do you want to re-run the program? Y/N ";
     cin >> relaunch;
-    if (relaunch == 'Y') { addition(); }
+    if (relaunch == 'Y') addition();
     //Writes the result of the 2 variables being added to a file called "log.txt"
-    if (relaunch == 'N') {
+    else if(relaunch == 'N') {
         cout << "Saving history to file.." << endl;
         ofstream logfile;
         logfile.open("log.txt");

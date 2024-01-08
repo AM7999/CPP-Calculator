@@ -131,10 +131,12 @@
     <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="division.cpp" />
     <ClCompile Include="gpa.cpp" />
+    <ClCompile Include="menu.cpp" />
     <ClCompile Include="mpg.cpp" />
     <ClCompile Include="multiplication.cpp" />
     <ClCompile Include="subtraction.cpp" />
     <ClCompile Include="temp.cpp" />
+    <ClCompile Include="tps.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="math.h" />

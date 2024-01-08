@@ -10,5 +10,8 @@ void division();
 void mpg();
 void temp();
 void gpa();
+void tps();
+
+void renderMenu();
 
 #endif
