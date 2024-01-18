@@ -137,6 +137,7 @@
     <ClCompile Include="subtraction.cpp" />
     <ClCompile Include="temp.cpp" />
     <ClCompile Include="tps.cpp" />
+    <ClCompile Include="energy.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="math.h" />
