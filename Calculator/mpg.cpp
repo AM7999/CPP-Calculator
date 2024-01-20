@@ -8,11 +8,11 @@ void mpg() {
 	clear();
 
 	//Variables Declare
-	int vYear = 0;
-	string vBrand = "";
-	string vMake = "";
-	float val1 = 0;
-	float val2 = 0;
+	int vYear;
+	string vBrand;
+	string vMake;
+	float val1;
+	float val2;
 	char relaunch;
 	//Gets the users input for the vehicle's brand, make, and year
 	cout << "Please enter the vehicle's brand following a space: ";
