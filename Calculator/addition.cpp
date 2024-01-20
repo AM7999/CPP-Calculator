@@ -10,9 +10,9 @@ void addition() {
     clear();
     
     //Main function
-    cout << "Please Select a number for the variable addOne: ";
+    cout << "Please Select a number to add: ";
     cin >> addOne;
-    cout << "Please Select a number for the variable AddTwo: ";
+    cout << "Please Select another number to add: ";
     cin >> addTwo;
     cout << "Result: " << addOne + addTwo << endl;
     char relaunch;

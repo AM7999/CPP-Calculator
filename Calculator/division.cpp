@@ -10,9 +10,9 @@ void division() {
 	clear();
 
 	//Main function
-	cout << "Please Select a number for the variable divOne: ";
+	cout << "Please Select a number to divide by: ";
 	cin >> divOne;
-	cout << "Please Select a number for the variable divTwo: ";
+	cout << "Please Select another number to divide by: ";
 	cin >> divTwo;
 	cout << "Result: " << divOne / divTwo << endl;
 	char relaunch;
