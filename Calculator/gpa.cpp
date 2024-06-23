@@ -1,8 +1,7 @@
 #include <iostream>
 #include <fstream>
+#include "math.h"
 using namespace std;
-
-#define clear() printf("\033[h\033[J")
 
 void gpa() {
 	//Clears the terminal
@@ -10,7 +9,7 @@ void gpa() {
 	//Variables
 	float gradeOne, gradeTwo, gradeThree, gradeFour, gradeFive, gradeSix, gradeSeven;
 	//Main program
-	cout << "Grade number guide: A=4 B=3 C=2 D=1 F=0" << endl;
+	cout << "Grade number guide: A=4 B=3 C=2 D=1 F=0" << '\n';
 	cout << "Please insert your first classes grade: "; cin >> gradeOne;
 	cout << "Please insert your second classes grade: "; cin >> gradeTwo;
 	cout << "Please insert your third classes grade: "; cin >> gradeThree;
@@ -21,20 +20,20 @@ void gpa() {
 	//Defines 2 new float vars to get your gpa
 	float add = gradeOne + gradeTwo + gradeThree + gradeFour + gradeFive + gradeSix + gradeSeven;
 	float gradePointAverage = add / 7;
-	cout << "Your gpa is: " << gradePointAverage << endl;
+	cout << "Your gpa is: " << gradePointAverage << '\n';
 	char relaunch;
 	cout << "Do you want to re-run the program? Y/N";
 	cin >> relaunch;
 	if (relaunch == 'Y') { gpa(); }
 	if (relaunch == 'N') {
-		cout << "Saving history to file.." << endl;
+		cout << "Saving history to file.." << '\n';
 		ofstream logfile;
 		logfile.open("log.txt");
-		logfile << "FILE WILL BE ERASED ON PROGRAM EXIT \nGPA: " << gradePointAverage << endl;
+		logfile << "FILE WILL BE ERASED ON PROGRAM EXIT \nGPA: " << gradePointAverage << '\n';
 		logfile.close();
-		cout << "Exit.." << endl;
+		cout << "Exit.." << '\n';
 	}
 	else {
-		cout << "Expected Y/N got: " << relaunch << endl;
+		cout << "Expected Y/N got: " << relaunch << '\n';
 	}
 }

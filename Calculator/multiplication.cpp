@@ -1,8 +1,8 @@
 #include <iostream>
 #include <fstream>
+#include "math.h"
 using namespace std;
 
-#define clear() printf("\033[H\033[J")
 
 void multiplication() {
 	int mulOne, mulTwo;
@@ -16,7 +16,7 @@ void multiplication() {
 	cin >> mulTwo;
 	cout << "Result: " << mulOne * mulTwo;
 	char relaunch;
-	cout << "Do you want to re-run the program? Y/N " << endl;
+	cout << "Do you want to re-run the program? Y/N " << '\n';
 	cin >> relaunch;
 	if (relaunch == 'Y') { multiplication(); }
 	//Writes the result of the 2 variables being added to a file called "log.txt"
@@ -27,10 +27,10 @@ void multiplication() {
 		logfile << "FILE WILL BE ERASED ON PROGRAM RE-EXIT \n Multiplication: ";
 		logfile << mulOne * mulTwo;
 		logfile.close();
-		cout << "Exit.." << endl;
+		cout << "Exit.." << '\n';
 	}
 	//Exits if the char variable relaunch is not equal to Y or N
 	else {
-		cout << "Expected uppercase got: " << relaunch << endl;
+		cout << "Expected uppercase got: " << relaunch << '\n';
 	}
 }

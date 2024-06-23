@@ -1,8 +1,7 @@
 #include <iostream>
 #include <fstream>
+#include "math.h"
 using namespace std;
-
-#define clear() printf("\033[H\033[J")
 
 void mpg() {
 	clear();
@@ -29,25 +28,25 @@ void mpg() {
 	//Declares the result variable as a floating variable
 	float result = val2 / val1;
 	//Outputs the result and the brand make and year of the car
-	cout << vBrand << vMake << vYear << endl;
-	cout << val1 << endl;
-	cout << val2 << endl;
-	cout << result << endl;
+	cout << vBrand << vMake << vYear << '\n';
+	cout << val1 << '\n';
+	cout << val2 << '\n';
+	cout << result << '\n';
 	cout << "Do you want to re-run the program? Y/N";
 	cin >> relaunch;
 	if (relaunch == 'Y') { mpg(); }
 	if (relaunch == 'N') {
-		cout << "Saving history to file.." << endl;
+		cout << "Saving history to file.." << '\n';
 		ofstream logfile;
 		logfile.open("log.txt");
-		logfile << "FILE WILL BE ERASED ON PROGRAM EXIT \nMPG: " << result << endl;
+		logfile << "FILE WILL BE ERASED ON PROGRAM EXIT \nMPG: " << result << '\n';
 		logfile << vBrand;
 		logfile << vMake;
 		logfile << vYear;
 		logfile.close();
-		cout << "Exit.." << endl;
+		cout << "Exit.." << '\n';
 	}
 	else {
-		cout << "Expected uppercase got: " << relaunch << endl;
+		cout << "Expected uppercase got: " << relaunch << '\n';
 	}
 }
